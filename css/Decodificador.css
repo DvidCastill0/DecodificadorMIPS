@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000000;
+    font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#contenedorPrincipal{
+    width: 90%;
+}
+
+#titulo{
+    font-size: 60px;
+    text-align: center;
+    margin: auto;
+}
+
+textarea.form-control {
+    resize:none;
+    height: 350px;
+}
+
+#btn_instruccionesdisponibles{
+	position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    width: auto;
+    height: 50px;
+	color: rgb(242, 242, 242);
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 15px;
+	background: transparent;
+    border-color: aliceblue;
+	border-width: 3px;
+	font-family: -webkit-pictograph;
+	padding-top: 5px;
+}
+
+h3{
+	color: #f0f8ffe8;
+}
+
+.decodificadores{
+	background-color: #01100d;
+    font-family: consolas;
+	color: #149414;
+}
+
+.decodificadores:hover{
+	background-color: #1c6758;
+	color: #149414;
+}
+
+.decodificadores:focus{
+	background-color: #041e19;
+	color: #149414;
+}
+
+#informacionBinaria{
+	background-color: black;
+}
+
+.btns_Acciones{
+	color: #149414;
+	font-size: 20px;
+	padding: 10px;
+	background: transparent;
+    border-color: #149414;
+	border-width: 3px;
+	font-family: -webkit-pictograph;
+	padding-top: 5px;
+	font-family: consolas;
+}
+
+.ta_Info{
+	width: 90%;
+	height: 100%;
+	float: left;
+}
+
+.numerosLineasTA{
+	width: 10%;
+	height: 100%;
+	float: left;
+	overflow: inherit;
+}
+
+#nlTA_Ensamblador{
+	overflow: hidden;
+	font-size: 1rem;
+    font-family: consolas;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+    background: #343a40;
+    color: #adb5bd;
+	height: 350px;
+	width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#terminal{
+	height: 100px;
+	overflow: hidden;
+}
+
+#contenedorIMGInstrucciones{
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 15;
+	background-color: #0000006f;
+	position: absolute;
+	justify-content: center;
+    align-items: center;
+}

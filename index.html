@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Decodificador Ensamblador</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.js"></script>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.css">
+        <link rel="stylesheet" href="css/Decodificador.css">
+    </head>
+    <body>
+        <div id="contenedorIMGInstrucciones" onclick="cerrarIMGIns()">
+            <img src="/DecodificadorMIPS/instrucciones.PNG" height="90%">
+        </div>
+        <div class=".container-fluid" id="contenedorPrincipal">
+                <div class="row">
+                    <h3 id="titulo">Decodificador Ensamblador Binario</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row-9">
+                            <div class="numerosLineasTA">
+                                <div class="form-control" id="nlTA_Ensamblador">
+                                    
+                                </div>
+                                <br>
+                            </div>
+                            <div class="ta_Info">
+                                <textarea class="form-control decodificadores" id="informacionEnsamblador" onkeyup="numLineas()"></textarea>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row-3">
+                            <button class="form-control btns_Acciones" onclick="decodificar()">Decodificar</button>
+                        </div>
+    
+                    </div>
+                    <div class="col">
+                        <div class="row-9">
+                            <textarea class="form-control decodificadores" id="informacionBinaria"></textarea>
+                            <br>
+                        </div>
+                        <div class="row-3">
+                            <button class="form-control btns_Acciones" id="descargarTXT" disabled="true" onclick="download('instrucciones.txt')">Descargar archivo txt</button>
+                        </div>
+    
+                    </div>
+                </div>
+                <br>
+                <!--Implementar una terminal en el futuro-->
+                <div class="row" style="display: none;">
+                    <div class="col">
+                        <textarea class="form-control decodificadores" id="terminal"> </textarea>
+                    </div>
+                    <div class="col">
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="btn_instruccionesdisponibles" type="button" onclick="abrirIMGIns()" >
+                <p>Instrucciones Disponibles</p>
+            </button>
+    </body>
+    <script src="js/Decodificador.js"></script>
+</html>
